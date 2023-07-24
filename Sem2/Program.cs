@@ -14,43 +14,20 @@ int n2 = n1/10;
 645 -> 5
 78 -> третьей цифры нет
 32679 -> 6*/
+Console.Clear();
+Console.Write("Введите число: ");
+Int64 n = Convert.ToInt32(Console.ReadLine());
+if (n < 100)
+Console.WriteLine("третьей цифры нет");
+else
+{
+     while (n > 1000)
+     n = n / 10;
+Console.WriteLine(n % 10);
+}
+
 
 /*Console.Clear();
-int Prompt (string message)
-{
-     
-Console.Write(message);
-string value = Console.ReadLine();
-
-int n = Convert.ToInt32(value);
-return n;
-}
-
-int GetThirdRank (int n)
-{
-     while (n>999)
-     {
-          n/=10;
-     }
-     return n%10;
-}
-bool ValidateNumber(int n)
-{
-     if (n<100)
-     {
-          Console.WriteLine("Третьей цифры нет");
-          return false;
-     }
-     return true;
-
-}
-
-int number = Prompt("Введите число >");
-if (ValidateNumber(number))
-
-     Console.WriteLine(GetThirdRank (number));*/
-
-Console.Clear();
 Console.WriteLine("Введите число");
 
 int n = Convert.ToInt32(Console.ReadLine());
@@ -58,3 +35,4 @@ int n = Convert.ToInt32(Console.ReadLine());
      Console.WriteLine("Будний день");
      else 
      Console.WriteLine("Выходной день");
+*/
